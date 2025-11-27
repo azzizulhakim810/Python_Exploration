@@ -69,3 +69,22 @@ print(a[1])
 print(a[2])
 #print value having key="age"
 print(a["age"])
+
+# -----------------------------------
+
+# 1. Byte objects
+data = b"hello"  # Immutable bytes object
+mutable_data = bytearray(b"hello")  # Mutable bytearray object
+view = memoryview(mutable_data)  # Memoryview of the bytearray
+
+# 2. NumPy arrays
+# import numpy as np
+
+# Creating a 1D array
+# data = np.array([1, 2, 3, 4])
+
+# Creating a 2D array
+# data_2d = np.array([[1, 2], [3, 4]])
+
+# Performing element-wise operations
+# squared = data ** 2
