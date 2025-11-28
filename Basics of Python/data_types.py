@@ -78,13 +78,13 @@ mutable_data = bytearray(b"hello")  # Mutable bytearray object
 view = memoryview(mutable_data)  # Memoryview of the bytearray
 
 # 2. NumPy arrays
-# import numpy as np
+import numpy as np
 
 # Creating a 1D array
-# data = np.array([1, 2, 3, 4])
+data = np.array([1, 2, 3, 4])
 
 # Creating a 2D array
-# data_2d = np.array([[1, 2], [3, 4]])
+data_2d = np.array([[1, 2], [3, 4]])
 
 # Performing element-wise operations
-# squared = data ** 2
+squared = data ** 2
