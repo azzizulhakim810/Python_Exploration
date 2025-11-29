@@ -78,13 +78,44 @@ mutable_data = bytearray(b"hello")  # Mutable bytearray object
 view = memoryview(mutable_data)  # Memoryview of the bytearray
 
 # 2. NumPy arrays
-import numpy as np
+# import numpy as np
 
 # Creating a 1D array
-data = np.array([1, 2, 3, 4])
+# data = np.array([1, 2, 3, 4])
 
 # Creating a 2D array
-data_2d = np.array([[1, 2], [3, 4]])
+# data_2d = np.array([[1, 2], [3, 4]])
 
 # Performing element-wise operations
-squared = data ** 2
+# squared = data ** 2
+
+# ---------------------------------------------------
+
+# Addition Operation +
+
+addition = 8 + 3
+print("Addition:", addition)  # Output: 11
+
+# Subtraction operation -
+subtraction = 9 - 4
+print("Subtraction:", subtraction)  # Output: 5
+
+# Multiplication operation *
+multiplication = 10 * 2
+print("Multiplication:", multiplication)  # Output: 20
+
+# Division operation /
+division = 10 / 6
+print("Division:", division)  # Output: 1.6666666666666667
+
+# Integer Division operation //
+integer_division = 10 // 2
+print("Integer Division:", integer_division)  # Output: 5
+
+# Modulus operation %
+modulus = 10 % 5
+print("Modulus:", modulus)  # Output: 0
+
+# Exponentiation operation **
+exponentiation = 2 ** 6
+print("Exponentiation:", exponentiation)  # Output: 64
