@@ -73,8 +73,8 @@ print(a["age"])
 # -----------------------------------
 
 # 1. Byte objects
-data = b"hello"  # Immutable bytes object
-mutable_data = bytearray(b"hello")  # Mutable bytearray object
+data = b"hey"  # Immutable bytes object
+mutable_data = bytearray(b"hey")  # Mutable bytearray object
 view = memoryview(mutable_data)  # Memoryview of the bytearray
 
 # 2. NumPy arrays
