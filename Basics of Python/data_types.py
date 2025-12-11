@@ -34,7 +34,7 @@ a= [1,2,3,4,5,6]
 print(a)
     
 #list of having only strings
-b=["hello","john","reese"]
+b=["hello","john","reese", "cheese"]
 print(b)
     
 #list of having both integers and strings
