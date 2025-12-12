@@ -38,7 +38,7 @@ b=["hello","john","reese", "cheese"]
 print(b)
     
 #list of having both integers and strings
-c= ["hey","you",1,2,3,"go"]
+c= ["hey","you",1,2,3,"go", "down"]
 print(c)
     
 #index are 0 based. this will print a single character
