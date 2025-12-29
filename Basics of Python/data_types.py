@@ -47,7 +47,7 @@ a=(1,2,3,4)
 # print(a) #prints the whole tuple
     
 # tuple having multiple type of data.
-b=("hello", 1,2,3,"go")
+b=("hello", 1,2,3, True)
 # print(b) #prints the whole tuple
     
 #index of tuples are also 0 based.
@@ -105,15 +105,15 @@ division = 10 / 6
 # print("Division:", division)  # Output: 1.6666666666666667
 
 # Integer Division operation //
-integer_division = 10 // 2
-# print("Integer Division:", integer_division)  # Output: 5
+integer_division = 10 // 6
+# print("Integer Division:", integer_division)  # Output: 1
 
 # Modulus operation %
-modulus = 10 % 5
-# print("Modulus:", modulus)  # Output: 0
+modulus = 10 % 6
+# print("Modulus:", modulus)  # Output: 4
 
 # Exponentiation operation **
-exponentiation = 2 ** 6
+exponentiation = 2 ** 6 # 2 * 2 * 2 * 2 * 2 * 2 
 # print("Exponentiation:", exponentiation)  # Output: 64
 
 # -----------------------------------------------------------
@@ -136,12 +136,51 @@ sugar_amount = 12
 # Mutable Data Types 
 
 spice_mix = set()
-print(f"Initial spice mix id: {id(spice_mix)}")
-print(f"Initial spice mix id: {(spice_mix)}")
+# print(f"Initial spice mix id: {id(spice_mix)}")
+# print(f"Initial spice mix id: {(spice_mix)}")
 
 spice_mix.add("Ginger")
 spice_mix.add("Cardamom")
 
-print(f"Initial spice mix id: {id(spice_mix)}")
-print(f"Initial spice mix id: {(spice_mix)}")
+# print(f"Initial spice mix id: {id(spice_mix)}")
+# print(f"Initial spice mix id: {(spice_mix)}")
 # As they have the same id, so the same thing is changing after adding items
+
+
+# -------------------------------------------------- 
+
+total_tea_leaves_harvested = 1_000_000_000
+# print("tea leaves:", total_tea_leaves_harvested)
+# print(f"tea leaves: {total_tea_leaves_harvested}")
+
+
+# Boolean ----------------------------------------------------
+
+is_boiling = True
+stri_count = 5
+total_actions = stri_count + is_boiling # upcasting
+# print(f"Total Actions: {total_actions}")
+
+milk_presence = 0 # no milk
+# print(f"Is there milk {bool(milk_presence)}")
+
+# Logical ----------------------------------------------------
+
+water_hot = True
+tea_added = False
+
+can_serve = water_hot and tea_added
+can_serve_now = water_hot or tea_added
+# print(f"Can serve the tea? {can_serve}")
+# print(f"Can serve the tea now? {can_serve_now}")
+
+
+# Real Number ----------------------------------------------------
+import sys
+ideal_temp = 95.5
+current_temp = 95.499999999999999
+
+print(f"Ideal Temp {ideal_temp}")
+print(f"Current Temp {current_temp}")
+print(f"Difference Temp {ideal_temp - current_temp}")
+print(sys.float_info)
