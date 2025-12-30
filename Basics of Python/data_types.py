@@ -255,5 +255,20 @@ sugar_level = [1, 2, 3, 4, 5]
 # print(f"Minimum sugar level: {min(sugar_level)}")
 
 
+# Operator Overloading & Bytearray in Python ---------------------------------------
+
+base_liquid = ["water", "milk"]
+extra_flavor = ["ginger"]
+
+full_liquid_mix = base_liquid + extra_flavor # So the plus(+) outperform, it's not just a addition
+# print(f"Liquid Mix: {full_liquid_mix}")
+
+strong_brew = ["black tea", "Water"] * 3
+# print(f"Strong Brew: {strong_brew}")
+
+raw_spice_data = bytearray(b"CINNAMON")
+raw_spice_data = raw_spice_data.replace(b"CINNA", b"CARD")
+# print(f"Bytes: {raw_spice_data}")
+
 
 
