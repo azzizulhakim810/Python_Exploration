@@ -221,5 +221,39 @@ ginger_ratio, cardamom_ratio = cardamom_ratio, ginger_ratio
 # print(f"Swapped Ratio of G: {ginger_ratio} and Swapped Ratio of C: {cardamom_ratio}")
 
 # Membership 
-print(f"Is cinnamon in masala spices? {"cinnamon" in masala_spices}")
+# print(f"Is cinnamon in masala spices? {"cinnamon" in masala_spices}")
+
+
+# Basic of List(Array) in Python ---------------------------------------------------------------------- 
+
+ingredients = ["water", "milk", "black tea"]
+ingredients.append("sugar") # Adding new element from last
+# print(f"Ingredients are: {ingredients}")
+
+ingredients.insert(2, "sauce") # Adding new element in a specific position
+# print(f"Ingredients are: {ingredients}")
+
+ingredients.remove("black tea") # Eleminating the specific element
+# print(f"Ingredients are: {ingredients}")
+
+last_added = ingredients.pop() # Eleminating the last element
+# print(f"Last element '{last_added}' removed from the {ingredients}")
+
+spice_options = ["ginger", "cardamom"]
+chai_ingredients = ["water", "milk"]
+
+chai_ingredients.extend(spice_options)
+# print(f" chai: {chai_ingredients}")
+chai_ingredients.reverse()
+# print(f"Reverse the chai: {chai_ingredients}")
+
+chai_ingredients.sort()
+# print(f"Sorted chai: {chai_ingredients}")
+
+sugar_level = [1, 2, 3, 4, 5]
+# print(f"Maximum sugar level: {max(sugar_level)}")
+# print(f"Minimum sugar level: {min(sugar_level)}")
+
+
+
 
