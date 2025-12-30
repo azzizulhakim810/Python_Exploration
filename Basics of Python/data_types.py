@@ -180,7 +180,27 @@ import sys
 ideal_temp = 95.5
 current_temp = 95.499999999999999
 
-print(f"Ideal Temp {ideal_temp}")
-print(f"Current Temp {current_temp}")
-print(f"Difference Temp {ideal_temp - current_temp}")
-print(sys.float_info)
+# print(f"Ideal Temp {ideal_temp}")
+# print(f"Current Temp {current_temp}")
+# print(f"Difference Temp {ideal_temp - current_temp}")
+# print(sys.float_info)
+
+
+# String Type ----------------------------------------------------
+
+chai_type = "Ginger Chai"
+customer_name = "Jim"
+
+# print(f"Order for {customer_name}: {chai_type} please !")
+
+chai_description = "Aromatic and Bold"
+# print(f"First Word: {chai_description[:8]}")
+# print(f"Last Word: {chai_description[12:]}")
+# print(f"Last Word: {chai_description[::-1]}")
+
+label_text = "Chai Spécial"
+encoded_label = label_text.encode("utf-8")
+decoded_label = encoded_label.decode("utf-8")
+
+print(f"Encoded Label: {encoded_label}")
+print(f"Decoded Label: {decoded_label}")
