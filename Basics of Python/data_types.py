@@ -202,5 +202,24 @@ label_text = "Chai Spécial"
 encoded_label = label_text.encode("utf-8")
 decoded_label = encoded_label.decode("utf-8")
 
-print(f"Encoded Label: {encoded_label}")
-print(f"Decoded Label: {decoded_label}")
+# print(f"Encoded Label: {encoded_label}")
+# print(f"Decoded Label: {decoded_label}")
+
+
+# Tuples, Membership ----------------------------------------------------
+
+masala_spices = ("cardamom", "cloves", "cinnamon")
+
+(spices1, spices2, spices3) = masala_spices
+
+# print(f"Main masala spices are: {spices1, spices2, spices3}")
+
+ginger_ratio, cardamom_ratio = 2, 1
+# print(f"Ratio of G: {ginger_ratio} and Ratio of C: {cardamom_ratio}")
+
+ginger_ratio, cardamom_ratio = cardamom_ratio, ginger_ratio
+# print(f"Swapped Ratio of G: {ginger_ratio} and Swapped Ratio of C: {cardamom_ratio}")
+
+# Membership 
+print(f"Is cinnamon in masala spices? {"cinnamon" in masala_spices}")
+
