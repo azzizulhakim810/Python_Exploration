@@ -324,5 +324,24 @@ customer_note = chai_order.get("customer note", "No Note") # If "customer note" 
 # print(f"Customer_note is  {customer_note}")
 
 
+# Advance Data Type -------------------------------------------
+
+# datetime
+# time 
+# calendar
+# timedelta
+# arrow
+# dateutil
+
+import arrow
+
+brewing_time = arrow.utcnow()
+brewing_time.to("Europe/Rome")
+
+from collections import namedtuple
+chai_profile = namedtuple("chai_profile", ["flavor", "aroma"])
+
+print(f"{chai_profile}")
+
 
 
