@@ -271,4 +271,58 @@ raw_spice_data = raw_spice_data.replace(b"CINNA", b"CARD")
 # print(f"Bytes: {raw_spice_data}")
 
 
+# Set & frozenset ----------------------------------------------------------------- 
+
+essential_spices = {"cardamom", "ginger", "cinamon"}
+optional_spices = {"cloves", "ginger", "black pepper"}
+
+all_spices = essential_spices | optional_spices
+# print(f"All Spices: {all_spices}")
+
+common_spices = essential_spices & optional_spices
+# print(f"Common Spices: {common_spices}")
+
+only_in_essential = essential_spices - optional_spices
+# print(f"Only in Essentials Spices: {only_in_essential}")
+
+# print(f"Is 'Cloves' in optional spices? {"cloves" in optional_spices}")
+
+
+# Dictionary -------------------------------------------------------------------------
+
+chai_order = dict(type="Masala Chai", size="Large", sugar=2)
+# print(f"Chai Order: {chai_order}")
+
+
+chai_recipe = {}
+chai_recipe["base"] = "black tea"
+chai_recipe["liquid"] = "milk"
+
+# print(f"chai_recipe: {chai_recipe}")
+# print(f"Is Sugar in the order? {"sugar" in chai_order}")
+
+# print(f"Recipe: {chai_recipe}")
+del chai_recipe["base"]
+# print(f"Recipe: {chai_recipe}")
+
+
+chai_order = dict(type="Ginger Chai", size="Medium", sugar=1)
+
+# print(f"Order Details (keys): {chai_order.keys()}")
+# print(f"Order Details (values): {chai_order.values()}")
+# print(f"Order Details (items): {chai_order.items()}")
+
+last_item = chai_order.popitem()
+# print(f"Removed the last item: {last_item}")
+
+extra_spices = {"cardamom": "crushed", "ginger": "sliced"}
+chai_recipe.update(extra_spices)
+
+# print(f"Updated Chai Recipe: {chai_recipe}")
+
+customer_note = chai_order.get("customer note", "No Note") # If "customer note" is found in the chai_order, show its value, otherwise show "No Note"
+# print(f"Customer_note is  {customer_note}")
+
+
+
 
