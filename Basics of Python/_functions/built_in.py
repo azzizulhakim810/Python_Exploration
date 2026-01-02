@@ -7,6 +7,8 @@ def chai_flavor(flavor="masala"):
 print(chai_flavor.__doc__) # it prints only the first line(doc) after defining the function
 print(chai_flavor.__name__) # it prints the name of the function
 
+# Dunder methods, also known as magic methods or special methods, are predefined methods in Python with names starting and ending with double underscores (e.g., __init__, __str__). They allow you to customize the behavior of your classes to seamlessly integrate with Python's built-in functions, operators, and syntax. 
+
 def generate_bill(chai=0, samosa=0):
   """
   Calculate the total bill for chai & samosa
