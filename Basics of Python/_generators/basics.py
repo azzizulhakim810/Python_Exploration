@@ -14,7 +14,7 @@ for cup in stall: # it's the main calling & printing
   print(cup)
 
 
-# Another one -----------------------------------------------
+# Another way to show -----------------------------------------------
 
 def get_chai_list():
   return ["Cup 1", "Cup 2", "Cup 3"]
