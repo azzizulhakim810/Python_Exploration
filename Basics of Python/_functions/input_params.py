@@ -16,7 +16,7 @@ def edit_chai_amount(cup):
 edit_chai_amount(chai)
 print(chai)
 
-# --------------------------------------
+# Args & KwArgs --------------------------------------
 
 def make_chai(tea, milk, sugar):
   print(tea, milk, sugar)
@@ -25,7 +25,7 @@ make_chai("Sylhetti", "Yes", "No") # positional (argument)
 make_chai(tea="Chatgaiya", sugar="Yes", milk="No") # Keyword argument
 
 
-# ----------------------------------------- 
+# Another method to pass args----------------------------------------- 
 
 def special_chai(*ingredients, **extras):
   print("Ingredients: ", ingredients)

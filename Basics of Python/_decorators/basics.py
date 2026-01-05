@@ -2,7 +2,7 @@
 from functools import wraps
 
 def my_decorator(func):
-  @wraps(func) # mention the wrapped function
+  @wraps(func) # mention the wrapped function sot that It can preserve the actual value or name
   def wrapper():
     print("Before function runs")
     func() # calll the function got from parameter
