@@ -28,4 +28,4 @@ chai = get_chai_gen() # next pauses the stream & take a break & execute
 print(next(chai)) # It's just printing the first one by using next
 print(next(chai)) # It's just printing the second one by using next 
 print(next(chai)) # It's just printing the third one by using next
-print(next(chai)) # It's showing error
+# print(next(chai)) # It's showing error
