@@ -7,7 +7,7 @@ class BaseChai:
     print(f"Preparing {self.type} chai....")
 
 # Inheritance
-class MasalaChai(BaseChai): # Inherite from parent
+class GingerChai(BaseChai): # Inherite from parent
   
   # Method 
   def add_spices(self):
@@ -26,7 +26,7 @@ class ChaiShop:
     self.chai.prepare()
 
 class FancyChaiShop(ChaiShop):
-  chai_cls = MasalaChai # an attribute which holds a reference of MasalaChai
+  chai_cls = GingerChai # an attribute which holds a reference of GingerChai
 
 shop = ChaiShop()
 fancy = FancyChaiShop()
