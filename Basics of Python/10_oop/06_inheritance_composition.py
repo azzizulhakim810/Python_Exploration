@@ -1,6 +1,7 @@
 class BaseChai:
+  # create a constructor __init__
   def __init__(self, type_):
-    self.type = type_
+    self.type = type_ # constructor variable don't need to create before that, It's the same. It's like type = None before that
 
   # Method 
   def prepare(self):
@@ -28,6 +29,8 @@ class ChaiShop:
 class FancyChaiShop(ChaiShop):
   chai_cls = GingerChai # an attribute which holds a reference of GingerChai
 
+
+# creating object 
 shop = ChaiShop()
 fancy = FancyChaiShop()
 shop.serve()
