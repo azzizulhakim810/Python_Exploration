@@ -1,0 +1,22 @@
+class TeaLeaf:
+  # Create Constructor 
+  def __init__(self, age):
+    self._age = age # initialize it with underscore( _ ). Python can understand it will be a getter-setter property
+    
+  # Getter 
+  @property
+  def age(self):
+    return self._age + 2
+  
+  # Setter
+  @age.setter
+  def age(self, age):
+    if 1 <= age <= 5:
+      self._age = age
+    else:
+      raise ValueError("Tea leaf age must be between 1 and 5")
+    
+leaf = TeaLeaf(2)
+print(leaf.age)
+leaf.age = 3
+print(leaf.age)
