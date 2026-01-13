@@ -9,7 +9,7 @@ favorite_chais = [
   "Elaichi Chai"
 ]
 
-unique_chai = {chai for chai in favorite_chais}
+unique_chai = {chai for chai in favorite_chais}  # Using {}
 # print (unique_chai)
 
 
@@ -22,6 +22,11 @@ recipes = {
 }
 
 # Set Comprehension =  {expression for item in iterable if condition (we can use other things like loops instead of condition)} 
+
+# recipes.key() = all keys
+# recipes.values() = all values
+# recipes.item() = whole item
+
 unique_spices = {spice for ingredients in recipes.values() for spice in ingredients} # we should use the ultimate value(spice) in the first place not "ingredients"
 
 print(unique_spices)
