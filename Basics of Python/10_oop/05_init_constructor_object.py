@@ -2,7 +2,7 @@ class Chai_Order:
   # define a constructor [ __init__ ]
   def __init__(self, type_, size):
     # inside the constructor, we should initialize the properties 
-    self.type = type_ # we can create un-existed properties inside the constructor like type, size. This they are empty string or None
+    self.type = type_ # we can create un-existed properties inside the constructor like type, size. Basically they are empty string or None
     self.size = size
 
   # method
