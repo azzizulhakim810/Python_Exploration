@@ -20,3 +20,10 @@ leaf = TeaLeaf(2)
 print(leaf.age)
 leaf.age = 3
 print(leaf.age)
+
+
+# The Moral
+
+# _age = Secret vault (real age)
+# Getter = Magical display scale (showing value with some extra)
+# Setter = Security guard (validates quality control)

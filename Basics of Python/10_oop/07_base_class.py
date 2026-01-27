@@ -5,7 +5,7 @@ class Chai:
     self.strength = strength
 
 # Code Duplication 
-class GingerChai(Chai):
+class GingerChai(Chai): # Inheriting Base Class
   def __init__(self, type_, strength, spice_level):
     self.type = type_
     self.strength = strength
