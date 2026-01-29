@@ -10,9 +10,9 @@ import time
 def brew_chai():
   print(f"{threading.current_thread().name} started brewing...")
   count = 0
-  for _ in range(100):
+  for _ in range(100_000_000):
     count += 1
-    print(f"{threading.current_thread().name} - This is count: {count}")
+    # print(f"{threading.current_thread().name} - This is count: {count}")
   print(f"{threading.current_thread().name} finished brewing...")
   
 # These two threads both are trying to manipulate the count value at the same time, but one enter first & protected by mutex, then left & other enter & do that same 
