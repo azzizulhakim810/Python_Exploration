@@ -54,3 +54,11 @@ brew_thread.join()
 
 print(f"All orders taken & chai brewed")
 
+# The fianl output 
+# Taking order for $1
+# Brewing Chai for 1
+# Taking order for $2
+# Brewing Chai for 2
+# Taking order for $3
+# Brewing Chai for 3
+# All orders taken & chai brewed

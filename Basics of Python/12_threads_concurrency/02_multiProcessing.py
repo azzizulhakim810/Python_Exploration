@@ -8,7 +8,9 @@ def brew_chai(name):
 
 
 # brew_chai("masala")
- 
+
+
+# The if __name__ == "__main__" part protects the code so it only runs when you execute this file directly (required for multiprocessing on Windows). 
 if __name__ == "__main__":
   chai_makers = [
     Process(target=brew_chai, args=(f"Chai Maker #{i+ 1}", )) # This comma is important, it shows no kwargs
@@ -20,7 +22,7 @@ if __name__ == "__main__":
   for p in chai_makers:
     p.start()
 
-  # Wait for all to complete
+  # Wait for all to complete all three tasks
   for p in chai_makers:
     p.join()
 
