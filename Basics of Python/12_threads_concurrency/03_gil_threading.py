@@ -15,7 +15,8 @@ def brew_chai():
     # print(f"{threading.current_thread().name} - This is count: {count}")
   print(f"{threading.current_thread().name} finished brewing...")
   
-# These two threads both are trying to manipulate the count value at the same time, but one enter first & protected by mutex, then left & other enter & do that same 
+# These two threads both are trying to manipulate the count value at the same time, 
+# but one enter first & protected by mutex, then left & other enter & do that same 
 thread1 = threading.Thread(target=brew_chai, name="Barista-1")
 thread2 = threading.Thread(target=brew_chai, name="Barista-2")
 
