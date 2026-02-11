@@ -10,8 +10,9 @@ def brew_chai(name):
 # brew_chai("masala")
 
 
-# The if __name__ == "__main__" part protects the code so it only runs when you execute this file directly (required for multiprocessing on Windows). 
+# if __name__ == "__main__" part protects the code so it only runs when you execute this file directly (required for multiprocessing on Windows). 
 if __name__ == "__main__":
+  # Comprehension []
   chai_makers = [
     Process(target=brew_chai, args=(f"Chai Maker #{i+ 1}", )) # This comma is important, it shows no kwargs
     #self._target(*self._args, **self._kwargs)
