@@ -6,6 +6,7 @@ async def fetch_url(session, url):
     print(f"Fetched {url} with status {response.status}")
 
 
+# contains all the async work 
 async def main():
   urls = ["https://httpbin.org/delay/2"] * 3
   async with aiohttp.ClientSession() as session:
