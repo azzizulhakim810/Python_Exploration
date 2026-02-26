@@ -1,6 +1,7 @@
 import asyncio
 import aiohttp
 
+# Async individual operation 
 async def fetch_url(session, url):
   async with session.get(url) as response:
     print(f"Fetched {url} with status {response.status}")
