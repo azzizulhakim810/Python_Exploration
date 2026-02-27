@@ -1,7 +1,7 @@
 import asyncio
 import aiohttp
 
-# Async individual operation 
+# Async individual operation to set in a sequence
 async def fetch_url(session, url):
   async with session.get(url) as response:
     print(f"Fetched {url} with status {response.status}")
