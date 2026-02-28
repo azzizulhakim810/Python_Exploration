@@ -11,7 +11,7 @@ async def brew(name):
 
   print(f"{name} is ready")
 
-
+# contains all the async work in a row
 async def main():
   await asyncio.gather(
     brew("Masala Chai"),
