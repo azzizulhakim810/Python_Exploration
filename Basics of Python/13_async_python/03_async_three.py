@@ -11,6 +11,7 @@ async def fetch_url(session, url):
 async def main():
   urls = ["https://httpbin.org/delay/2"] * 3
   async with aiohttp.ClientSession() as session:
+    # tasks = [t1, t2, t3]
     tasks = [fetch_url(session, url) for url in urls]
     await asyncio.gather(*tasks)
 
