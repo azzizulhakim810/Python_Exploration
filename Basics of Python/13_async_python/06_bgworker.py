@@ -21,7 +21,7 @@ asyncio.run(fetch_orders())
 # Meanwhile, a waiter (fetch_orders) is doing his actual job — taking and fetching orders from the kitchen.
 # Both are working at the same time, independently. The inspector doesn't wait for the waiter, and the waiter doesn't wait for the inspector.
 
-
+# -------------------------------------------------- 
 
 # What is daemon=True? 🔑
 # This is the most important concept here.
