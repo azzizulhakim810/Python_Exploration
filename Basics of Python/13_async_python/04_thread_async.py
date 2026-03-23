@@ -20,10 +20,14 @@ asyncio.run(main())
 
 # What This Code Does Instead
 # The waiter (async event loop) takes your order and says:
-
 # "I'll hand this to the kitchen staff and go serve other tables while they cook."
-
 # The kitchen staff (ThreadPoolExecutor/thread) handles the slow, blocking work — checking stock — in a separate worker thread.
 # await loop.run_in_executor(...) is the waiter handing off the task and saying:
-
 # "Call me when it's ready."
+
+# ----------------------------------------------------
+
+# Why Not Just Use async Directly?
+# Because check_stock uses time.sleep(3) — a blocking call that can't be made async (it's old/third-party code). So instead of rewriting it, you run it in a thread where blocking is perfectly fine, and let asyncio stay free to do other things.
+
+# Key idea: run_in_executor is a bridge between the async world and blocking code — best of both worlds.
