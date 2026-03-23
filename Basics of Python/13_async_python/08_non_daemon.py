@@ -5,9 +5,9 @@ def monitor_sublimation_matchine_temp():
   while True:
     print(f"Monitoring tea temperature")
     time.sleep(2)
-
-# daemon=True ---> Thread dies when main program ends 
-t = threading.Thread(target=monitor_sublimation_matchine_temp, daemon=True)
+    
+# daemon=False --> Program hangs, never exits 
+t = threading.Thread(target=monitor_sublimation_matchine_temp)
 
 t.start()
 
