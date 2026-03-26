@@ -14,3 +14,5 @@ for t in threads: t.start()
 for t in threads: t.join()
 
 print(f"Chai Stock", jersey_stock)
+
+# Race condition → threads run freely and corrupt data by trampling each other's writes. The program finishes but gives a wrong answer.
