@@ -34,4 +34,4 @@ t1.start()
 t2.start()
 
 
-# Deadlock → threads politely wait for each other forever. The program never finishes at all.
+# Deadlock → threads politely wait for each other forever. The program never finishes at all. 
